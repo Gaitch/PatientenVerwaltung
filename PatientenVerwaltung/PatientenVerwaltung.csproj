@@ -51,6 +51,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientenKartei\AbrechnungsObjekte\Abrechnung.cs" />
+    <Compile Include="PatientenKartei\AbrechnungsObjekte\Quartal.cs" />
+    <Compile Include="PatientenKartei\BehandlungsObjekte\Behandlung.cs" />
+    <Compile Include="PatientenKartei\BehandlungsObjekte\Rezept.cs" />
+    <Compile Include="PatientenKartei\BehandlungsObjekte\Verordnung.cs" />
+    <Compile Include="PatientenKartei\Kartei.cs" />
+    <Compile Include="PatientenKartei\PatientenObjekte\Patient.cs" />
+    <Compile Include="PatientenKartei\PatientenObjekte\PatientenKarte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -78,10 +86,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Kartei\Abrechnung\" />
-    <Folder Include="Kartei\Behandlung\" />
-    <Folder Include="Kartei\Patient\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
