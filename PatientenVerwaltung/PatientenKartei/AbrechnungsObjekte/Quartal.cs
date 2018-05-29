@@ -7,7 +7,7 @@ using PatientenVerwaltung.PatientenKartei.BehandlungsObjekte;
 
 namespace PatientenVerwaltung.PatientenKartei.AbrechnungsObjekte
 {
-    class Quartal
+    public class Quartal
     {
         private int Quartalsnummer;
         private int Year;

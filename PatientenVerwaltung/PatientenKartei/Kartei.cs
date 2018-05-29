@@ -9,7 +9,7 @@ using PatientenVerwaltung.PatientenKartei.BehandlungsObjekte;
 
 namespace PatientenVerwaltung.PatientenKartei
 {
-    class Kartei
+    public class Kartei
     {
         private List<PatientenKarte> Karten;
         private static Kartei kartei;

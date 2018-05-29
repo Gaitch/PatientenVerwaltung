@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
 {
-    class Verordnung
+    public class Verordnung
     {
         protected int Id;
         public string Beschreibung;
