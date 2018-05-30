@@ -1,6 +1,6 @@
 ﻿namespace PatientenVerwaltung
 {
-    partial class Form1
+    partial class GUI
     {
         /// <summary>
         /// Erforderliche Designervariable.

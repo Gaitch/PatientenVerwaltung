@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
 {
-    class Rezept : Verordnung
+    public class Rezept : Verordnung
     {
         public string Medikament;
         public string Anweisung;

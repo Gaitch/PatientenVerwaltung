@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
 {
-    class Behandlung
+    public class Behandlung
     {
         private int Id;
         private DateTime Datum;

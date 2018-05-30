@@ -7,7 +7,7 @@ using PatientenVerwaltung.PatientenKartei.BehandlungsObjekte;
 
 namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
 {
-    class PatientenKarte
+    public class PatientenKarte
     {
         private Patient Patient;
         private List<Behandlung> Behandlungen;
