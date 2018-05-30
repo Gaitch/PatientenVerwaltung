@@ -14,6 +14,7 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
             lastname,
             firstname,
             address,
+            city,
             plz,
             tel,
             email;
@@ -31,6 +32,7 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
             string lastname,
             string firstname,
             string address,
+            string city,
             string plz,
             string tel,
             string email,
@@ -42,6 +44,7 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
             this.lastname = lastname;
             this.firstname = firstname;
             this.address = address;
+            this.city = city;
             this.plz = plz;
             this.tel = tel;
             this.email = email;

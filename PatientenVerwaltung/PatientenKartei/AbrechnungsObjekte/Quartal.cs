@@ -86,10 +86,7 @@ namespace PatientenVerwaltung.PatientenKartei.AbrechnungsObjekte
         public List<Behandlung> GetBehandlungen()
         {
             Kartei kartei = Kartei.GetKartei();
-            return kartei.GetBehandlungFromQuartal(this);
+            return kartei.GetBehandlungenFromQuartal(this);
         }
-        
-
-
     }
 }
