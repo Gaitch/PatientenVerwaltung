@@ -45,11 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Behanldung hinzufügen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Behanldung hinzufügen.Designer.cs">
+      <DependentUpon>Behanldung hinzufügen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPatientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPatientForm.Designer.cs">
+      <DependentUpon>NewPatientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientenVerwaltung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientenVerwaltung.Designer.cs">
+      <DependentUpon>PatientenVerwaltung.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientenKartei\AbrechnungsObjekte\Abrechnung.cs" />
     <Compile Include="PatientenKartei\AbrechnungsObjekte\Quartal.cs" />
@@ -61,8 +73,14 @@
     <Compile Include="PatientenKartei\PatientenObjekte\PatientenKarte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Behanldung hinzufügen.resx">
+      <DependentUpon>Behanldung hinzufügen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPatientForm.resx">
+      <DependentUpon>NewPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientenVerwaltung.resx">
+      <DependentUpon>PatientenVerwaltung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
