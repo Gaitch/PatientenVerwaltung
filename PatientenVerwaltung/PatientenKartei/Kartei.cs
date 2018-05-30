@@ -44,7 +44,7 @@ namespace PatientenVerwaltung.PatientenKartei
 
         }
 
-        public void RomveCard(int id)
+        public void RemoveCard(int id)
         {
 
         }
