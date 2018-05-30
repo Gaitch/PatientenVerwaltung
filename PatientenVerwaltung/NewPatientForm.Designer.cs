@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnSaveNewPerson = new System.Windows.Forms.Button();
-            this.txtBirthdate = new System.Windows.Forms.TextBox();
             this.lblBirthdate = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -39,7 +38,7 @@
             this.comboTitle = new System.Windows.Forms.ComboBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.lblTel = new System.Windows.Forms.Label();
-            this.txtAdress = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.lblCity = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.lbladdress = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.lblLastname = new System.Windows.Forms.Label();
             this.lblPlz = new System.Windows.Forms.Label();
             this.txtPlz = new System.Windows.Forms.TextBox();
+            this.dateTimePickerBirthdate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnSaveNewPerson
@@ -61,14 +61,6 @@
             this.btnSaveNewPerson.Text = "Speichern";
             this.btnSaveNewPerson.UseVisualStyleBackColor = true;
             this.btnSaveNewPerson.Click += new System.EventHandler(this.BtnSaveNewPerson_Click);
-            // 
-            // txtBirthdate
-            // 
-            this.txtBirthdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBirthdate.Location = new System.Drawing.Point(11, 433);
-            this.txtBirthdate.Name = "txtBirthdate";
-            this.txtBirthdate.Size = new System.Drawing.Size(357, 26);
-            this.txtBirthdate.TabIndex = 60;
             // 
             // lblBirthdate
             // 
@@ -158,13 +150,13 @@
             this.lblTel.TabIndex = 51;
             this.lblTel.Text = "Tel.";
             // 
-            // txtAdress
+            // txtCity
             // 
-            this.txtAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdress.Location = new System.Drawing.Point(12, 277);
-            this.txtAdress.Name = "txtAdress";
-            this.txtAdress.Size = new System.Drawing.Size(246, 26);
-            this.txtAdress.TabIndex = 50;
+            this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCity.Location = new System.Drawing.Point(12, 277);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(246, 26);
+            this.txtCity.TabIndex = 50;
             // 
             // lblCity
             // 
@@ -248,13 +240,21 @@
             this.txtPlz.Size = new System.Drawing.Size(104, 26);
             this.txtPlz.TabIndex = 41;
             // 
+            // dateTimePickerBirthdate
+            // 
+            this.dateTimePickerBirthdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerBirthdate.Location = new System.Drawing.Point(12, 433);
+            this.dateTimePickerBirthdate.Name = "dateTimePickerBirthdate";
+            this.dateTimePickerBirthdate.Size = new System.Drawing.Size(356, 26);
+            this.dateTimePickerBirthdate.TabIndex = 62;
+            // 
             // NewPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 546);
+            this.Controls.Add(this.dateTimePickerBirthdate);
             this.Controls.Add(this.btnSaveNewPerson);
-            this.Controls.Add(this.txtBirthdate);
             this.Controls.Add(this.lblBirthdate);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
@@ -264,7 +264,7 @@
             this.Controls.Add(this.comboTitle);
             this.Controls.Add(this.txtTel);
             this.Controls.Add(this.lblTel);
-            this.Controls.Add(this.txtAdress);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.lblCity);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.lbladdress);
@@ -284,7 +284,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnSaveNewPerson;
-        private System.Windows.Forms.TextBox txtBirthdate;
         private System.Windows.Forms.Label lblBirthdate;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
@@ -294,7 +293,7 @@
         private System.Windows.Forms.ComboBox comboTitle;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label lblTel;
-        private System.Windows.Forms.TextBox txtAdress;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Label lblCity;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label lbladdress;
@@ -304,5 +303,6 @@
         private System.Windows.Forms.Label lblLastname;
         private System.Windows.Forms.Label lblPlz;
         private System.Windows.Forms.TextBox txtPlz;
+        private System.Windows.Forms.DateTimePicker dateTimePickerBirthdate;
     }
 }
