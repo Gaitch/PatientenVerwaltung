@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PatientenVerwaltung.PatientenKartei.AbrechnungsObjekte
 {
-    class Abrechnung
+    public class Abrechnung
     {
         private Quartal Quartal;
 

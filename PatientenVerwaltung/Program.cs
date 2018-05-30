@@ -16,7 +16,11 @@ namespace PatientenVerwaltung
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new PatientenVerwaltung());
+=======
+            Application.Run(new GUI());
+>>>>>>> origin/master
         }
     }
 }

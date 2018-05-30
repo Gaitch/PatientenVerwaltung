@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
 {
-    class Patient
+    public class Patient
     {
         public int id;
         public string title,
