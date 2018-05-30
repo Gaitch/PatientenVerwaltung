@@ -1,4 +1,5 @@
 CREATE DATABASE praxis;
+
 USE praxis;
 
 CREATE TABLE patient (
@@ -16,12 +17,12 @@ CREATE TABLE patient (
 
 CREATE TABLE patient_card (
 	id INT IDENTITY(0, 1) PRIMARY KEY,
-	patient_id INT NOT NULL,
+	patient_id INT NOT NULL FOREIGN KEY REFERENCES patient(id)
 );
 
 CREATE TABLE treatment (
 	id INT IDENTITY(0, 1) PRIMARY KEY,
-	patientcard_id INT NOT NULL,
+	patientcard_id INT NOT NULL FOREIGN KEY REFERENCES patient_card(id),
 	date_of_treatment DATE NOT NULL,
 	[description] VARCHAR(2048),
 	examination VARCHAR(2048),
@@ -30,12 +31,12 @@ CREATE TABLE treatment (
 
 CREATE TABLE prescription (
 	id INT IDENTITY(0, 1) PRIMARY KEY,
-	treatment_id INT NOT NULL,
+	treatment_id INT NOT NULL FOREIGN KEY REFERENCES treatment(id),
 	[description] VARCHAR(2048)
 );
 
 CREATE TABLE recipe (
-	prescription_id INT NOT NULL,
+	prescription_id INT NOT NULL FOREIGN KEY REFERENCES prescription(id),
 	medication VARCHAR(1024) NOT NULL,
 	instruction VARCHAR(2048) NOT NULL
 );
