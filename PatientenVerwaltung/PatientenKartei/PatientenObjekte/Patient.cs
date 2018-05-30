@@ -26,7 +26,7 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
         }
 
         public Patient(
-            int id,
+            //int id,
             string title,
             string gender,
             string lastname,
@@ -38,7 +38,7 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
             string email,
             DateTime birthdate)
         {
-            this.id = id;
+            //this.id = id;
             this.title = title;
             this.gender = gender;
             this.lastname = lastname;
