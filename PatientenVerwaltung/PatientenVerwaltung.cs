@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PatientenVerwaltung.PatientenKartei;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,10 +29,14 @@ namespace PatientenVerwaltung
 
         }
 
-        private void BtnAddTreatment_Click(object sender, EventArgs e)
+        private void BtnDeletePatient_Click(object sender, EventArgs e)
         {
-            Behanldung_hinzufügen behanldung_Hinzufügen = new Behanldung_hinzufügen();
-            behanldung_Hinzufügen.Show();
+            string text = lsvPatientCards.SelectedItems[0].Text;
+            int id = Convert.ToInt32(text);
+
+            Kartei.GetKartei().RemoveCard(id);
+
+            lsvPatientCards.Items.Remove(lsvPatientCards.SelectedItems[0]);
         }
     }
 }

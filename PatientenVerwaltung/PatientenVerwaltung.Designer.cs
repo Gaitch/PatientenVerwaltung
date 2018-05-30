@@ -28,20 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lsvPatientCards = new System.Windows.Forms.ListView();
             this.btnNewPatient = new System.Windows.Forms.Button();
             this.btnDeletePatient = new System.Windows.Forms.Button();
-            this.btnAddTreatment = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.colId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colGender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colLastname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colFirstname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBirthdate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // listView1
+            // lsvPatientCards
             // 
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1256, 614);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lsvPatientCards.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colId,
+            this.colTitle,
+            this.colGender,
+            this.colLastname,
+            this.colFirstname,
+            this.colBirthdate});
+            this.lsvPatientCards.Location = new System.Drawing.Point(12, 12);
+            this.lsvPatientCards.MultiSelect = false;
+            this.lsvPatientCards.Name = "lsvPatientCards";
+            this.lsvPatientCards.Size = new System.Drawing.Size(1256, 614);
+            this.lsvPatientCards.TabIndex = 0;
+            this.lsvPatientCards.UseCompatibleStateImageBehavior = false;
+            this.lsvPatientCards.View = System.Windows.Forms.View.Details;
             // 
             // btnNewPatient
             // 
@@ -61,36 +74,47 @@
             this.btnDeletePatient.TabIndex = 2;
             this.btnDeletePatient.Text = "Patient löschen";
             this.btnDeletePatient.UseVisualStyleBackColor = true;
+            this.btnDeletePatient.Click += new System.EventHandler(this.BtnDeletePatient_Click);
             // 
-            // btnAddTreatment
+            // colId
             // 
-            this.btnAddTreatment.Location = new System.Drawing.Point(1274, 194);
-            this.btnAddTreatment.Name = "btnAddTreatment";
-            this.btnAddTreatment.Size = new System.Drawing.Size(184, 23);
-            this.btnAddTreatment.TabIndex = 3;
-            this.btnAddTreatment.Text = "Behandlung hinzufügen";
-            this.btnAddTreatment.UseVisualStyleBackColor = true;
-            this.btnAddTreatment.Click += new System.EventHandler(this.BtnAddTreatment_Click);
+            this.colId.Tag = "ID";
+            this.colId.Text = "ID";
+            this.colId.Width = 164;
             // 
-            // button3
+            // colTitle
             // 
-            this.button3.Location = new System.Drawing.Point(1274, 223);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.colTitle.Text = "Titel";
+            this.colTitle.Width = 104;
+            // 
+            // colGender
+            // 
+            this.colGender.Text = "Geschlecht";
+            this.colGender.Width = 141;
+            // 
+            // colLastname
+            // 
+            this.colLastname.Text = "Nachname";
+            this.colLastname.Width = 334;
+            // 
+            // colFirstname
+            // 
+            this.colFirstname.Text = "Vorname";
+            this.colFirstname.Width = 356;
+            // 
+            // colBirthdate
+            // 
+            this.colBirthdate.Text = "Geburtsdatum";
+            this.colBirthdate.Width = 145;
             // 
             // PatientenVerwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1470, 630);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnAddTreatment);
             this.Controls.Add(this.btnDeletePatient);
             this.Controls.Add(this.btnNewPatient);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lsvPatientCards);
             this.Name = "PatientenVerwaltung";
             this.Text = "Patienten Verwaltung";
             this.Load += new System.EventHandler(this.PatientenVerwaltung_Load);
@@ -100,11 +124,15 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lsvPatientCards;
         private System.Windows.Forms.Button btnNewPatient;
         private System.Windows.Forms.Button btnDeletePatient;
-        private System.Windows.Forms.Button btnAddTreatment;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ColumnHeader colId;
+        private System.Windows.Forms.ColumnHeader colTitle;
+        private System.Windows.Forms.ColumnHeader colGender;
+        private System.Windows.Forms.ColumnHeader colLastname;
+        private System.Windows.Forms.ColumnHeader colFirstname;
+        private System.Windows.Forms.ColumnHeader colBirthdate;
     }
 }
 
