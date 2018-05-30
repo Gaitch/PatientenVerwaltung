@@ -45,12 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Behanldung hinzufügen.cs">
+    <Compile Include="AddTreatmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Behanldung hinzufügen.Designer.cs">
-      <DependentUpon>Behanldung hinzufügen.cs</DependentUpon>
+    <Compile Include="AddTreatmentForm.Designer.cs">
+      <DependentUpon>AddTreatmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataAccessLayer\BaseDataObject.cs" />
     <Compile Include="NewPatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,8 +74,8 @@
     <Compile Include="PatientenKartei\PatientenObjekte\PatientenKarte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Behanldung hinzufügen.resx">
-      <DependentUpon>Behanldung hinzufügen.cs</DependentUpon>
+    <EmbeddedResource Include="AddTreatmentForm.resx">
+      <DependentUpon>AddTreatmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewPatientForm.resx">
       <DependentUpon>NewPatientForm.cs</DependentUpon>
@@ -104,6 +105,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
