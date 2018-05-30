@@ -30,9 +30,9 @@
         {
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnNewPatient = new System.Windows.Forms.Button();
-            this.btnDeletePatien = new System.Windows.Forms.Button();
+            this.btnDeletePatient = new System.Windows.Forms.Button();
+            this.btnAddTreatment = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -53,14 +53,24 @@
             this.btnNewPatient.UseVisualStyleBackColor = true;
             this.btnNewPatient.Click += new System.EventHandler(this.BtnNewPatient_Click);
             // 
-            // btnDeletePatien
+            // btnDeletePatient
             // 
-            this.btnDeletePatien.Location = new System.Drawing.Point(1274, 41);
-            this.btnDeletePatien.Name = "btnDeletePatien";
-            this.btnDeletePatien.Size = new System.Drawing.Size(184, 23);
-            this.btnDeletePatien.TabIndex = 2;
-            this.btnDeletePatien.Text = "Patient löschen";
-            this.btnDeletePatien.UseVisualStyleBackColor = true;
+            this.btnDeletePatient.Location = new System.Drawing.Point(1274, 41);
+            this.btnDeletePatient.Name = "btnDeletePatient";
+            this.btnDeletePatient.Size = new System.Drawing.Size(184, 23);
+            this.btnDeletePatient.TabIndex = 2;
+            this.btnDeletePatient.Text = "Patient löschen";
+            this.btnDeletePatient.UseVisualStyleBackColor = true;
+            // 
+            // btnAddTreatment
+            // 
+            this.btnAddTreatment.Location = new System.Drawing.Point(1274, 194);
+            this.btnAddTreatment.Name = "btnAddTreatment";
+            this.btnAddTreatment.Size = new System.Drawing.Size(184, 23);
+            this.btnAddTreatment.TabIndex = 3;
+            this.btnAddTreatment.Text = "Behandlung hinzufügen";
+            this.btnAddTreatment.UseVisualStyleBackColor = true;
+            this.btnAddTreatment.Click += new System.EventHandler(this.BtnAddTreatment_Click);
             // 
             // button3
             // 
@@ -71,28 +81,18 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(1274, 194);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Behandlung hinzufügen";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // PatientenVerwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1470, 630);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.btnDeletePatien);
+            this.Controls.Add(this.btnAddTreatment);
+            this.Controls.Add(this.btnDeletePatient);
             this.Controls.Add(this.btnNewPatient);
             this.Controls.Add(this.listView1);
             this.Name = "PatientenVerwaltung";
-            this.Text = "Form1";
+            this.Text = "Patienten Verwaltung";
             this.Load += new System.EventHandler(this.PatientenVerwaltung_Load);
             this.ResumeLayout(false);
 
@@ -102,9 +102,9 @@
 
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnNewPatient;
-        private System.Windows.Forms.Button btnDeletePatien;
+        private System.Windows.Forms.Button btnDeletePatient;
+        private System.Windows.Forms.Button btnAddTreatment;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
     }
 }
 

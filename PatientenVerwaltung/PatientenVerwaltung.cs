@@ -28,7 +28,7 @@ namespace PatientenVerwaltung
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void BtnAddTreatment_Click(object sender, EventArgs e)
         {
             Behanldung_hinzufügen behanldung_Hinzufügen = new Behanldung_hinzufügen();
             behanldung_Hinzufügen.Show();
