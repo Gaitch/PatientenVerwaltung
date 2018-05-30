@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,12 +53,18 @@
       <DependentUpon>AddTreatmentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccessLayer\BaseDataObject.cs" />
+    <Compile Include="DataAccessLayer\BehandlungDO.cs" />
+    <Compile Include="DataAccessLayer\PatientenKarteDO.cs" />
+    <Compile Include="DataAccessLayer\PatientDO.cs" />
+    <Compile Include="DataAccessLayer\RezeptDO.cs" />
+    <Compile Include="DataAccessLayer\VerordnungDO.cs" />
     <Compile Include="NewPatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewPatientForm.Designer.cs">
       <DependentUpon>NewPatientForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PatientenKartei\BaseObject.cs" />
     <Compile Include="PatientenVerwaltung.cs">
       <SubType>Form</SubType>
     </Compile>
