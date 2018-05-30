@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PatientenVerwaltung.PatientenKartei;
 
 namespace PatientenVerwaltung
 {
@@ -14,6 +15,7 @@ namespace PatientenVerwaltung
         [STAThread]
         static void Main()
         {
+            Kartei.GetKartei();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PatientenVerwaltung());
