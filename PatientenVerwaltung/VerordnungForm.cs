@@ -18,9 +18,15 @@ namespace PatientenVerwaltung.PatientenKartei
             InitializeComponent();
         }
 
+
+
         private void BtnSaveVerordnung_Click(object sender, EventArgs e)
         {
-            Verordnung verordnung = new Verordnung();
+            string description = txtPrescriptionDescription.Text;
+
+            Verordnung verordnung = new Verordnung(0, description);
+
+            this.Close();
         }
     }
 }
