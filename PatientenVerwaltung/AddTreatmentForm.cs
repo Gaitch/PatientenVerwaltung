@@ -1,4 +1,5 @@
-﻿using PatientenVerwaltung.PatientenKartei.BehandlungsObjekte;
+﻿using PatientenVerwaltung.PatientenKartei;
+using PatientenVerwaltung.PatientenKartei.BehandlungsObjekte;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,9 +26,6 @@ namespace PatientenVerwaltung
             string description = txtDescription.Text;
             string examination = txtExamination.Text;
             double price = Convert.ToDouble(txtPrice.Text);
-            string PrescriptionDescription = txtPrescriptionDescription.Text;
-            string mediaction = txtMedication.Text;
-            string instruction = txtInstruction.Text;
 
             lblCurrentDate.Text = currentDateString;
 
@@ -35,6 +33,18 @@ namespace PatientenVerwaltung
             behandlung.Beschreibung = description;
             behandlung.Untersuchung = examination;
             behandlung.Kosten = price;
+        }
+
+        private void BtnOpenVerordnungForm_Click(object sender, EventArgs e)
+        {
+            VerordnungForm f = new VerordnungForm();
+            f.Show();
+        }
+
+        private void BtnOpenRezeptForm_Click(object sender, EventArgs e)
+        {
+            RezeptForm r = new RezeptForm();
+            r.Show();
         }
     }
 }
