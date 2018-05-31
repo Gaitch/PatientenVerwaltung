@@ -11,7 +11,7 @@ namespace PatientenVerwaltung.PatientenKartei
     {
         protected BaseObject()
         {
-            
+            BaseObject.ReadAllSettings();
         }
 
         protected static void ReadAllSettings()
