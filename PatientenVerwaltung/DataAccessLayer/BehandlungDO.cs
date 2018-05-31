@@ -88,6 +88,8 @@ namespace PatientenVerwaltung.DataAccessLayer
 
         public List<Behandlung> GetBehandlungenFromQuartal(Quartal quartal)
         {
+            List<Behandlung> bList = new List<Behandlung>();
+
             using (SqlConnection connection = base.GetSqlConnection())
             {
                 connection.Open();
@@ -109,6 +111,8 @@ namespace PatientenVerwaltung.DataAccessLayer
                     //
                 }
             }
+
+            return bList;
         }
 
         public override bool UpdateInsertObject<T>(T obj)
