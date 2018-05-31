@@ -16,10 +16,10 @@ namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
 
         }
 
-        public Verordnung(int id, string beschreibung)
+        public Verordnung(int id,string beschreibung)
         {
-            this.Id = id;
             this.Beschreibung = beschreibung;
+            this.Id = id;
         }
 
         public int GetId()
@@ -28,4 +28,3 @@ namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
         }
     }
 }
-

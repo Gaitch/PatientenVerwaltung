@@ -16,7 +16,7 @@ namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
 
         }
 
-        public Rezept(int id, string beschreibung, string medikament, string anweisung) : base(id, beschreibung)
+        public Rezept(int id, string beschreibung, string medikament, string anweisung) : base(id ,beschreibung)
         {
             this.Medikament = medikament;
             this.Anweisung = anweisung;
