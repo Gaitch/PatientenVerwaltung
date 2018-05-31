@@ -31,5 +31,15 @@ namespace PatientenVerwaltung.DataAccessLayer
                 return null;
             }
         }
+
+        public override bool UpdateInsertObject<T>(T obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool DeactivateObject<T>(T obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

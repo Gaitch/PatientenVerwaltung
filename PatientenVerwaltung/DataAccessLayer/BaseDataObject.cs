@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PatientenVerwaltung.PatientenKartei;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -29,5 +30,9 @@ namespace PatientenVerwaltung.DataAccessLayer
 
             return connection;
         }
+
+        public abstract bool UpdateInsertObject<T>(T obj);
+
+        public abstract bool DeactivateObject<T>(T obj);
     }
 }
