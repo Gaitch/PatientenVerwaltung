@@ -88,7 +88,27 @@ namespace PatientenVerwaltung.DataAccessLayer
 
         public List<Behandlung> GetBehandlungenFromQuartal(Quartal quartal)
         {
-            return null;
+            using (SqlConnection connection = base.GetSqlConnection())
+            {
+                connection.Open();
+                string dateStart, dateEnd;
+                dateStart = quartal.GetVonDate().ToString();
+                dateEnd = quartal.GetVonDate().ToString();
+                var cmd = new SqlCommand
+                {
+                    Connection = connection,
+                    CommandText = "SELECT * FROM treatment WHERE date_of_treatment BETWEEN @dStart AND @dEnd"
+                };
+                cmd.Parameters.Add(new SqlParameter("@dStart", dateStart));
+                cmd.Parameters.Add(new SqlParameter("@dEnd", dateEnd));
+                cmd.Prepare();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    //
+                }
+            }
         }
 
         public override bool UpdateInsertObject<T>(T obj)
