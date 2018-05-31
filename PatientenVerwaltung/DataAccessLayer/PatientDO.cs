@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace PatientenVerwaltung.DataAccessLayer
 {
-    class PatientDO : BaseDataObject
+    public class PatientDO : BaseDataObject
     {
-        protected PatientDO(string connectionString) : base(connectionString)
+        public PatientDO(string connectionString) : base(connectionString)
         {
         }
 
@@ -30,6 +30,16 @@ namespace PatientenVerwaltung.DataAccessLayer
 
                 return null;
             }
+        }
+
+        public override bool UpdateInsertObject<T>(T obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool DeactivateObject<T>(T obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }

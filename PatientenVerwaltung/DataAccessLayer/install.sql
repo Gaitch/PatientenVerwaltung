@@ -12,12 +12,14 @@ CREATE TABLE patient (
 	[address] VARCHAR(100),
 	zipcode VARCHAR(10),
 	phone VARCHAR(30),
-	email VARCHAR(100)
+	email VARCHAR(100),
+	active BIT DEFAULT 1
 );
 
 CREATE TABLE patient_card (
 	id INT IDENTITY(0, 1) PRIMARY KEY,
-	patient_id INT NOT NULL FOREIGN KEY REFERENCES patient(id)
+	patient_id INT NOT NULL FOREIGN KEY REFERENCES patient(id),
+	active BIT DEFAULT 1
 );
 
 CREATE TABLE treatment (
@@ -26,17 +28,20 @@ CREATE TABLE treatment (
 	date_of_treatment DATE NOT NULL,
 	[description] VARCHAR(2048),
 	examination VARCHAR(2048),
-	cost MONEY NOT NULL
+	cost MONEY NOT NULL,
+	active BIT DEFAULT 1
 );
 
 CREATE TABLE prescription (
 	id INT IDENTITY(0, 1) PRIMARY KEY,
 	treatment_id INT NOT NULL FOREIGN KEY REFERENCES treatment(id),
-	[description] VARCHAR(2048)
+	[description] VARCHAR(2048),
+	active BIT DEFAULT 1
 );
 
 CREATE TABLE recipe (
 	prescription_id INT NOT NULL FOREIGN KEY REFERENCES prescription(id),
 	medication VARCHAR(1024) NOT NULL,
-	instruction VARCHAR(2048) NOT NULL
+	instruction VARCHAR(2048) NOT NULL,
+	active BIT DEFAULT 1
 );
