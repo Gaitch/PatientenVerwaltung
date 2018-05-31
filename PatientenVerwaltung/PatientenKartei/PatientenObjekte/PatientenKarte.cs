@@ -9,6 +9,7 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
 {
     public class PatientenKarte
     {
+        private int id;
         private Patient Patient;
         private List<Behandlung> Behandlungen;
 
@@ -17,11 +18,16 @@ namespace PatientenVerwaltung.PatientenKartei.PatientenObjekte
 
         }
 
-        public PatientenKarte(Patient patient)
+        public PatientenKarte(int id, Patient patient)
         {
+            this.id = id;
             this.Patient = patient;
         }
 
+        public int GetId()
+        {
+            return this.id;
+        }
 
         public Patient GetPatient()
         {
