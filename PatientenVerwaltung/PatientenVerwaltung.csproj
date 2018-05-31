@@ -65,6 +65,12 @@
       <DependentUpon>NewPatientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientenKartei\BaseObject.cs" />
+    <Compile Include="RezeptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezeptForm.Designer.cs">
+      <DependentUpon>RezeptForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerordnungForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewPatientForm.resx">
       <DependentUpon>NewPatientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezeptForm.resx">
+      <DependentUpon>RezeptForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerordnungForm.resx">
       <DependentUpon>VerordnungForm.cs</DependentUpon>
