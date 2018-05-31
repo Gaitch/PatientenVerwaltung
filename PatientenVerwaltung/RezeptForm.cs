@@ -22,8 +22,9 @@ namespace PatientenVerwaltung
         {
             string medication = txtMedication.Text;
             string instruction = txtInstruction.Text;
+            string description = txtDescription.Text;
 
-            Rezept rezept = new Rezept(0, "",medication, instruction);
+            Rezept rezept = new Rezept(0, description,medication, instruction);
 
             this.Close();
         }
