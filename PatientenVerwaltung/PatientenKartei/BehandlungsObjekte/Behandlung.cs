@@ -20,9 +20,8 @@ namespace PatientenVerwaltung.PatientenKartei.BehandlungsObjekte
 
         }
 
-        public Behandlung(int id, DateTime date)
+        public Behandlung(DateTime date)
         {
-            this.Id = id;
             this.Datum = date;
             this.Verordnungen = new List<Verordnung>();
         }
